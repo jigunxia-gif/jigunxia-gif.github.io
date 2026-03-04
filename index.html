@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>张明镜 · AI训练师 | 大模型优化与提示工程专家</title>
+  <meta name="description" content="AI训练师，专注大模型行为训练、指令优化、数据标注、对话质量提升。提供企业AI训练、提示词设计、数据集清洗与质量评估服务。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo-dot"></span>
+        <span class="brand-name">张明镜</span>
+      </div>
+      <nav class="nav" aria-label="主导航">
+        <button class="nav-toggle" aria-label="展开菜单" aria-expanded="false">菜单</button>
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">首页</a></li>
+          <li><a href="#about" class="nav-link">关于我</a></li>
+          <li><a href="#skills" class="nav-link">核心技能</a></li>
+          <li><a href="#projects" class="nav-link">项目经验</a></li>
+          <li><a href="#services" class="nav-link">服务内容</a></li>
+          <li><a href="#contact" class="nav-link">联系我</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="section hero">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <h1 class="hero-title">AI训练师 | 大模型优化与提示工程专家</h1>
+            <p class="hero-subtitle">专注于大模型行为训练、指令优化、数据标注、对话质量提升</p>
+            <div class="hero-cta">
+              <a class="btn primary" href="#services">查看服务</a>
+              <a class="btn ghost" href="#contact">联系合作</a>
+            </div>
+          </div>
+          <div class="hero-media" aria-hidden="false">
+            <figure class="avatar" aria-label="个人头像">
+              <img src="./avatar.jpg" alt="个人头像" class="avatar-img" loading="lazy" width="320" height="320">
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bg"></div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div class="col">
+          <h2 class="section-title">关于我</h2>
+          <p class="text-lg">具备AI训练全流程经验，擅长数据处理、提示词工程、模型效果评估、对话逻辑优化。</p>
+          <p class="text-lg">能够帮助提升AI回答准确性、安全性、流畅度与实用性，输出标准化、高质量的AI内容。</p>
+        </div>
+        <div class="col about-highlights">
+          <div class="highlight">
+            <div class="highlight-badge">训练</div>
+            <div class="highlight-text">对话行为校准与安全策略落地</div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-badge">评估</div>
+            <div class="highlight-text">自动化与人工结合的质量评测</div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-badge">迭代</div>
+            <div class="highlight-text">数据闭环与持续优化流水线</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">核心技能</h2>
+        <ul class="chips">
+          <li>大模型对话训练与优化</li>
+          <li>提示词工程（Prompt Engineering）</li>
+          <li>数据标注、清洗、结构化处理</li>
+          <li>模型效果评估与迭代</li>
+          <li>AI内容生成与质量把控</li>
+          <li>多场景AI行为规则制定</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">项目经验</h2>
+        <article class="feature-case">
+          <h3 class="feature-title">实际项目展示 · 汽车行业用户购买意图分析标注</h3>
+          <div class="feature-body">
+            <h4>一、项目背景</h4>
+            <p>为某汽车厂商大模型提供用户购买意图识别的标注数据支持，通过对用户对话数据进行结构化标注，帮助模型精准判断用户购车意向强弱，最终辅助销售团队提升转化与成交效率。</p>
+            <h4>二、标注方案设计</h4>
+            <ol>
+              <li>数据预处理：受限于模型输入长度（≤2500 字），对原始用户对话记录进行合理切分，保证单段文本在字数限制内，同时不破坏对话语义完整性。</li>
+              <li>核心标注任务：对用户对话内容进行购买意图强弱标注，为模型训练提供高质量意图识别标注数据。</li>
+            </ol>
+            <h4>三、标注规则制定</h4>
+            <h5>1. 数据切分规则</h5>
+            <ul>
+              <li>单段文本长度严格控制在 2500 字以内</li>
+              <li>切分点优先选择：话题转换处；语句停顿、语气助词位置；与上文语义关联性较弱的分界点</li>
+              <li>确保切分后对话逻辑通顺、信息完整</li>
+            </ul>
+            <h5>2. 购买意图标注规则（三级分类）</h5>
+            <div class="intent">
+              <div class="intent-badge strong">强意图</div>
+              <ul>
+                <li>主动询问车型、价格、配置、优惠政策</li>
+                <li>明确表达看车 / 试驾意愿</li>
+                <li>确认支付、上牌、贷款等购车流程</li>
+                <li>可满足销售提出的购车条件</li>
+              </ul>
+            </div>
+            <div class="intent">
+              <div class="intent-badge medium">中意图</div>
+              <ul>
+                <li>态度中立、委婉观望</li>
+                <li>表达未来购车意向但暂无明确时间</li>
+                <li>不拒绝也不主动推进，处于犹豫、了解阶段</li>
+              </ul>
+            </div>
+            <div class="intent">
+              <div class="intent-badge weak">弱意图</div>
+              <ul>
+                <li>明确拒绝销售推荐</li>
+                <li>明确表示暂无购车计划</li>
+                <li>配合度低、对话意愿弱</li>
+              </ul>
+            </div>
+            <h4>四、项目价值</h4>
+            <p>通过标准化标注方案与清晰标注规则，输出高质量意图标注数据集，支撑大模型在汽车销售场景下的用户意图理解能力，为销售线索分级、精准跟进提供数据基础。</p>
+          </div>
+        </article>
+        <div class="card-grid">
+          <article class="card">
+            <h3 class="card-title">通用对话模型训练</h3>
+            <p class="card-text">优化回答逻辑、安全性、流畅度</p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">垂类领域内容结构化</h3>
+            <p class="card-text">按行业标准输出规范内容</p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">提示词体系搭建</h3>
+            <p class="card-text">构建高效、稳定、可复用的指令集</p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">数据质量提升</h3>
+            <p class="card-text">清洗、筛选、标注、增强数据集</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">服务内容</h2>
+        <div class="list two-col-list">
+          <div class="list-item">企业/产品AI模型训练服务</div>
+          <div class="list-item">提示词设计与优化</div>
+          <div class="list-item">数据集标注与清洗</div>
+          <div class="list-item">AI对话质量评估与迭代</div>
+          <div class="list-item">AI相关内容标准化输出</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">联系我</h2>
+        <div class="contact-card">
+          <div class="contact-line">
+            <span class="contact-label">邮箱</span>
+            <a href="mailto:540255605@qq.com" class="contact-value">540255605@qq.com</a>
+            <button class="copy" data-copy="540255605@qq.com" aria-label="复制邮箱">复制</button>
+          </div>
+          <div class="contact-line">
+            <span class="contact-label">微信</span>
+            <span class="contact-value">a_winter_round</span>
+            <button class="copy" data-copy="a_winter_round" aria-label="复制微信">复制</button>
+          </div>
+          <p class="contact-note">备注：可接AI训练、提示词优化、数据标注、内容结构化相关项目合作</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> 张明镜</div>
+      <a href="#home" class="back-top" aria-label="返回顶部">返回顶部</a>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
